@@ -1,10 +1,8 @@
-# USAD: Unified Statistical Adversarial Detection
-
-Official implementation for the ICML 2026 Workshop on Hypothesis Testing paper:
-
-**USAD: Uncertainty-aware Statistical Adversarial Detection**
-
 ## Overview
+
+# USAD
+
+Code repository for NeurIPS 2026 Submission #13913
 
 USAD is a training-free adversarial example detection framework based on kernel two-sample testing. Given a batch of inputs, USAD tests whether the batch has been adversarially perturbed by comparing it against clean reference data in the neural network's representation space. The method aggregates multiple complementary test statistics: mean divergence (MMD), variance divergence, and uncertainty divergence (covariance-based) via permutation testing with controlled Type-I error.
 
@@ -73,6 +71,7 @@ python cifar_pgd.py \
 ```
 
 Key arguments:
+
 - `--check 1`: evaluate test power (detection rate); `--check 0`: evaluate Type-I error
 - `--N_rf` / `--N_ip`: number of reference / input samples
 - `--n_per`: number of permutations for the permutation test
@@ -80,20 +79,3 @@ Key arguments:
 - `--reduction_method`: dimensionality reduction for covariance features (`pca`, `svd`, `random`)
 
 Results (mean and standard error over `--n_exp` repetitions) are saved to `exp/main_exp/.../Results/`.
-
-## Citation
-
-If you find this work useful, please cite:
-
-```bibtex
-@inproceedings{usad2026,
-  title={USAD: Uncertainty-aware Statistical Adversarial Detection},
-  author={Zhijian Zhou and Xunye Tian and Jiacheng Zhang and Zesheng Ye and Yiyi Guo and Donghao Zhang and Liuhua Peng and Feng Liu},
-  booktitle={ICML 2026 Workshop on Hypothesis Testing},
-  year={2026}
-}
-```
-
-## License
-
-This project is for research purposes.

@@ -1,6 +1,6 @@
 # USAD: Unified Statistical Adversarial Detection
 
-Official implementation for the ICML 2026 Workshop on Hypothesis Testing paper:
+Official implementation for the NeurIPS 2026 paper:
 
 **USAD: Uncertainty-aware Statistical Adversarial Detection**
 
@@ -89,7 +89,7 @@ If you find this work useful, please cite:
 @inproceedings{usad2026,
   title={USAD: Uncertainty-aware Statistical Adversarial Detection},
   author={Zhijian Zhou and Xunye Tian and Jiacheng Zhang and Zesheng Ye and Yiyi Guo and Donghao Zhang and Liuhua Peng and Feng Liu},
-  booktitle={ICML 2026 Workshop on Hypothesis Testing},
+  booktitle={NeurIPS},
   year={2026}
 }
 ```
